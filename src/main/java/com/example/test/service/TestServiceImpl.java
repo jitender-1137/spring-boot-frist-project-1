@@ -24,9 +24,4 @@ public class TestServiceImpl implements TestService {
 		return testRepository.save(test);
 	}
 
-	@Override
-	public void deleteUser(Long id) {
-			testRepository.deleteById(id);
-
-	}
 }

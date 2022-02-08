@@ -27,8 +27,4 @@ public class TestController {
         return new ResponseEntity<Test>(testService.saveUser(test), HttpStatus.CREATED);
     }
 
-    @DeleteMapping(path = "{id}")
-    public void deleteUser(@PathVariable("id") Long id){
-        testService.deleteUser(id);
-    }
 }
